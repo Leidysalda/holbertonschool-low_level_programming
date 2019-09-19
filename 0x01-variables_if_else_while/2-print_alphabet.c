@@ -8,11 +8,11 @@
 */
 int main(void)
 {
-char letter;
-letter = 'a';
-while (letter < = 'z')
+char n;
+n = 'a'
+while (n < = 'z')
 {
-putchar(letter);
-letter++; }
+putchar(n'\n');
+n++ }
 return (0);
 }
