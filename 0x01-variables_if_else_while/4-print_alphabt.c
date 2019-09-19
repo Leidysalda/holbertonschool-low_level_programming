@@ -2,23 +2,17 @@
 #include <time.h>
 #include <stdio.h>
 /**
-* main - Alphabet
+* main - Alphabet soup
 *
 * Return: Always 0 (Success)
 */
 int main(void)
 {
-char n = 'a';
-char m = 'A';
-while (n <= 'z')
+char n;
+for (n = 'a' ;  n <= 'z' ; n++)
 {
+if (n != 'q' && n != 'e')
 putchar(n);
-n++;
-}
-while (m <= 'Z')
-{
-putchar(m);
-m++;
 }
 putchar('\n');
 return (0);
