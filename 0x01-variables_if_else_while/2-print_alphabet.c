@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
-* main - Entry point
+* main - Display Alphabet
 *
 * Return: Always 0 (Success)
 */
@@ -14,6 +14,6 @@ while (n <= 'z')
 putchar(n);
 n++;
 }
- putchar ('\n')
+putchar('\n');
 return (0);
 }
