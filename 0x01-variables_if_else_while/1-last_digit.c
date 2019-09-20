@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
-* main - Numbers
+* main - Mirrow
 *
 * Return: Always 0 (Success)
 */
@@ -16,5 +16,6 @@ for (i = n - 2; i >= 0; i--)
 {
 putchar(palabra[i]);
 }
-return ();
+putchar ('\n');
+return (0);
 }
