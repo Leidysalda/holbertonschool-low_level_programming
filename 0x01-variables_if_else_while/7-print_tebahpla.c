@@ -16,6 +16,6 @@ for (i = n - 2; i >= 0; i--)
 {
 putchar (palabra[i]);
 putchar ('\n');
-};
-return ();
+}
+return (0);
 }
