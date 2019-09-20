@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
-* main - Numbers
+* main - Mirrow
 *
 * Return: Always 0 (Success)
 */
@@ -14,7 +14,8 @@ char palabra[] = "abcdefghijklmnopqrstuvwxyz";
 n = sizeof(palabra);
 for (i = n - 2; i >= 0; i--)
 {
-putchar(palabra[i]);
-}
+putchar (palabra[i]);
+putchar ('\n');
+};
 return ();
 }
