@@ -10,12 +10,12 @@ int main(void)
 {
 int n;
 int i;
-char palabra[] = "abcdefghijklmnopqrstuvwxyz";
+char palabra = "abcdefghijklmnopqrstuvwxyz";
 n = sizeof(palabra);
 for (i = n - 2; i >= 0; i--)
 {
 putchar (palabra[i]);
-putchar ('\n');
 }
+putchar ('\n');
 return (0);
 }
