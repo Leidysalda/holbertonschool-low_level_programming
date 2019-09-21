@@ -2,17 +2,17 @@
 #include <time.h>
 #include <stdio.h>
 /**
-* main - Numbers
+* main - 00 -99 Numbers
 *
 * Return: Always 0 (Success)
 */
 int main(void)
 {
 int n = 0;
-for (n = 0 ; n <= 9 ; n++)
+for (n = 0 ; n <= 99 ; n++)
 {
-putchar (n);
+printf( "%02d, " ,n);
 }
-putchar ('\n');
+putchar('\n');
 return (0);
 }

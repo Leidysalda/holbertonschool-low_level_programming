@@ -2,20 +2,28 @@
 #include <time.h>
 #include <stdio.h>
 /**
-* main - Mirrow
+* main - Entry point
 *
-* Return: Always 0 (Success)
+* Return: Lastdigit
 */
 int main(void)
 {
-int n;
-int i;
-char palabra[] = "abcdefghijklmnopqrstuvwxyz";
-n = sizeof(palabra);
-for (i = n - 2; i >= 0; i--)
+int n = 0;
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+int i = (n % 10);
+if (n < 0)
+if (i > 5)
 {
-putchar(palabra[i]);
+printf("Last digit of %d is %d and is greater than 5\n", n, i);
 }
-putchar ('\n');
+if (i == 0)
+{
+printf("Last digit of %d is %d and is 0\n", n, i);
+}
+else if (i < 6 && i != 0)
+{
+printf("Last digit of %d is %d and is less than 6 and not 0\n", n, i);
+}
 return (0);
 }
