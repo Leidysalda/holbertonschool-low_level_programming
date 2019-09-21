@@ -2,16 +2,16 @@
 #include <time.h>
 #include <stdio.h>
 /**
-* main - Entry point
+* main - Last number
 *
-* Return: Lastdigit
+* Return: Always 0 (Success)
 */
 int main(void)
 {
-int n;
+int n ;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-int i = (n % 10);
+char i = (n % 10);
 if (n < 0)
 if (i > 5)
 {
