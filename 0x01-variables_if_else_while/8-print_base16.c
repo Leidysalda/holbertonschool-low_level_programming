@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
@@ -6,6 +7,8 @@
 *
 * Return: Always 0 (Success)
 */
+=======
+>>>>>>> 708dc2f15b06d10b53d0bad60a0f269c3edb6d57
 int main(void)
 {
 int n = 0;
