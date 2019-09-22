@@ -13,10 +13,8 @@ char i = 'a';
 for (n = '0' ; n <= '9' ; n++)
 {
 putchar(n);
-}
-while (i <= 'f'){
-putchar(i);
-i++;
+putchar(',')
+putchar(' ')
 }
 putchar('\n');
 return (0);
