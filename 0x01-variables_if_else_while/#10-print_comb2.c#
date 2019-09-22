@@ -9,7 +9,7 @@
 int main(void)
 {
 int n = 0;
-for (n = 0 ; n <= 99 ; n++)
+for (n = '00' ; n <= 99 ; n++)
 {
 printf( "%02d, " ,n);
 }
