@@ -2,5 +2,5 @@
 main()
 {
 puts("\"Programming is like building a multilingual puzzle\n");
-echo $?;
-} 
+exit(0);
+}
