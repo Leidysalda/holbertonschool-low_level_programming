@@ -1,4 +1,4 @@
-#ifndef _PUTCHAR_H
-#define _PUTCHAR_H
+#ifndef _PUTCHAR
+#define _PUTCHAR
 int _putchar(char c);
 #endif
