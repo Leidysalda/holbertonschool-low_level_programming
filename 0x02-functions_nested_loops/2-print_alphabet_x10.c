@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-* print_alphabet - writes the alphabet x 10
+* print_alphabet_x10 - writes x 10 times
 * The caracter to print
 *
 *Return: 0
