@@ -1,6 +1,6 @@
-#include "holberton.h"s
+#include "holberton.h"
 /**
-* print_alphabet - writes the alphabet
+* print_alphabet - writes the alphabet x 10
 * The caracter to print
 *
 *Return: 0
@@ -9,7 +9,14 @@
 void print_alphabet(void)
 {
 int n;
-for (n = 'a' ; n <= 'z' ; n++)
+int i = 0;
+do {
+for (n = 'a' ; n <= 'z'; n++)
+{
 _putchar(n);
+}
+i++;
 _putchar('\n');
+} while (i <= 9);
+return (0);
 }
