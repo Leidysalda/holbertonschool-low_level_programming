@@ -1,20 +1,20 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 /**
-* main - Numbers
+* main - Patience
 *
 * Return: Always 0 (Success)
 */
 int main(void)
 {
-int n = 0;
-char i = 'a';
+int n;
 for (n = '0' ; n <= '9' ; n++)
 {
 putchar(n);
-putchar(',')
-putchar(' ')
+if (n < '9')
+{
+putchar(',');
+putchar(' ');
+}
 }
 putchar('\n');
 return (0);
