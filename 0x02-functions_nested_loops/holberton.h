@@ -27,3 +27,8 @@ int _isalpha(int c);
 #define PRINT_SING
 int print_sign(int n);
 #endif
+
+#ifndef _ABS
+#define _ABS
+int _abs(int);
+#endif
