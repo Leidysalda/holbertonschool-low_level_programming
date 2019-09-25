@@ -1,22 +1,16 @@
 #include "holberton.h"
 /**
-* int _abs(int) - print sign of a number
-*@n: The caracter to print
-*
-*Return: 0n success 1.
-* On error, -1 is returned, and errno is set appropriately.
-*/
-int _abs(int)
+ * _abs - print absolute value of an integer
+ * @r:The caracter to print
+ *
+ *Return: 0n success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _abs(int r)
 {
-if (n > '0')
-_putchar('+');
-_putchar('1');
-if
-(n == '0')
-_putchar('0');
-if
-(n < '0')
-_putchar('-');
-_putchar('1');
-return (0);
+if (r >= 0)
+_putchar(r);
+else
+r=r*-1;
+return (r);
 }
