@@ -17,3 +17,23 @@ void print_alphabet_x10(void);
 #define _ISLOWER
 int _islower(int c);
 #endif
+
+#ifndef _ISALPHA
+#define _ISALPHA
+int _isalpha(int c);
+#endif
+
+#ifndef PRINT_SIGN
+#define PRINT_SIGN
+int print_sign(int n);
+#endif
+
+#ifndef INT _ABS
+#define INT _ABS
+int _abs(int);
+#endif
+
+#ifndef PRINT_LAST_DIGIT
+#define PRINT_LAST_DIGIT
+int print_last_digit(int);
+#endif

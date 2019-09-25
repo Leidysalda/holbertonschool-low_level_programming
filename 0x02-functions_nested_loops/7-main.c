@@ -7,14 +7,12 @@
  */
 int main(void)
 {
-int r;
+  int r;
 
-r = _islower('H');
-_putchar(r + '0');
-r = _islower('o');
-_putchar(r + '0');
-r = _islower(108);
-_putchar(r + '0');
+print_last_digit(98);
+print_last_digit(0);
+r = print_last_digit(-1024);
+_putchar('0' + r);
 _putchar('\n');
 return (0);
 }
