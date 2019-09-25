@@ -22,3 +22,8 @@ int _islower(int c);
 #define _ISALPHA
 int _isalpha(int c);
 #endif
+
+#ifndef PRINT_SING
+#define PRINT_SING
+int print_sign(int n);
+#endif
