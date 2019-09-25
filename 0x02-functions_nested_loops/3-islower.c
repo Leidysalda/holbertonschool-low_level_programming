@@ -9,13 +9,7 @@
 int _islower(int c)
 {
 if (c >= 'a' && c <= 'z')
-<<<<<<< HEAD
 return (1);
 else
-=======
-{
-_putchar('1');
-}
->>>>>>> 7e2775a1eccb599d2cfd9c3a877a8e5b17cd7abc
 return (0);
 }
