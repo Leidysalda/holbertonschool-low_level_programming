@@ -1,3 +1,8 @@
+#ifndef PRINT_LINE_H
+#define PRINT_LINE_H
+void print_line(int n);
+#endif
+
 #ifndef MORE_NUMBERS_H
 #define MORE_NUMBERS_H
 void more_numbers(void);
