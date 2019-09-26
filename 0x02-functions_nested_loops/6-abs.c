@@ -8,14 +8,9 @@
  */
 int _abs(int r)
 {
-int n;
 if (r >= 0)
-{
-n = r
-}
+_putchar(r)
 else
-{
-n = r * -1;
-}
+r = r * -1;
 return (n);
 }
