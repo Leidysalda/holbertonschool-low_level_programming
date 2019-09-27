@@ -1,3 +1,8 @@
+#ifndef PRINT_DIAGONAL
+#define PRINT_DIAGONAL
+void print_diagonal(int n);
+#endif
+
 #ifndef PRINT_LINE_H
 #define PRINT_LINE_H
 void print_line(int n);
