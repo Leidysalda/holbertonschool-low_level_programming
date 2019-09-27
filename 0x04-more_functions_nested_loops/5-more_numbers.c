@@ -21,6 +21,5 @@ _putchar(n % 10 + '0');
 }
 i++;
 _putchar('\n');
-}
- while (i <= 9);
+} while (i <= 9);
 }
