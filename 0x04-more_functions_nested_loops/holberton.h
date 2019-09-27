@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 #ifndef PRINT_DIAGONAL_H
 #define PRINT_DIAGONAL_H
+=======
+#ifndef PRINT_DIAGONAL
+#define PRINT_DIAGONAL
+>>>>>>> efe5c34d3803f27a8084d865619138eb43ab031b
 void print_diagonal(int n);
 #endif
 
