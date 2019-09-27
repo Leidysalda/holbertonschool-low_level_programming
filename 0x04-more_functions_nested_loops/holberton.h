@@ -1,3 +1,8 @@
+#ifndef PRINT_DIAGONAL_H
+#define PRINT_DIAGONAL_H
+void print_diagonal(int n);
+#endif
+
 #ifndef PRINT_LINE_H
 #define PRINT_LINE_H
 void print_line(int n);
@@ -15,7 +20,7 @@ int _isupper(int c);
 
 #ifndef _ISDIGIT_H
 #define _ISDIGIT_H
-int _isdigit(int c);
+int _isdigit(char c);
 #endif
 
 #ifndef MUL_H
