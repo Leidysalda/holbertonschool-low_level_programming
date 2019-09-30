@@ -1,21 +1,25 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 /**
-* main - Mirrow
+* main - Print number 00 - 99
 *
 * Return: Always 0 (Success)
 */
 int main(void)
 {
-int n;
-int i;
-char palabra[] = "abcdefghijklmnopqrstuvwxyz";
-n = sizeof(palabra);
-for (i = n - 2; i >= 0; i--)
+int i, n;
+for (i = 48; i <= 57; i++)
 {
-putchar(palabra[i]);
+for (n = 48; n <= 57; n++)
+{
+putchar (i);
+putchar (n);
+if (n != '9' || i != '9')
+{
+putchar(',');
+putchar(' ');
 }
-putchar ('\n');
+}
+}
+putchar('\n');
 return (0);
 }
