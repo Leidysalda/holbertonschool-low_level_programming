@@ -8,6 +8,11 @@
  */
 int _strlen(char *s)
 {
-char str[] = {"Holberton!"};
-_putchar(strlen(str))
+int i;
+i = 0;
+while (s[i] != '\0')
+{
+i++;
+}
+return (i);
 }
