@@ -17,8 +17,8 @@ i++;
 j = 0;
 while (j < i)
 {
-putchar(str[j]);
+_putchar(str[j]);
 j += 2;
 }
-putchar ('\n');
+_putchar ('\n');
 }
