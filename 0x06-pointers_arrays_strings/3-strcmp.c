@@ -1,17 +1,16 @@
 #include "holberton.h"
 /**
- * _strncpy - print a string
- * @dest: The caracter to print
- * @src: The word to print
- * @n: account
+ * _strcmp - print a string comparate
+ * @s1: The caracter to print
+ * @s2: The word to print
+ *
  *Return: Always 0.
  */
 int _strcmp(char *s1, char *s2)
 {
 int i;
-for (i = 0 ; i < n && src[i] != '\0'; i++)
-dest[i] = src[i];
-for (; i < n; i++)
-dest[i] = '\0';
-return (dest);
+i = 0;
+while (s1[i] == s2[i] && s1[i] != '\0')
+i++;
+return (s1[i] - s2[i]);
 }
