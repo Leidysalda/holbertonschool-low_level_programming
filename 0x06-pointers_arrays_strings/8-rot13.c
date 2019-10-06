@@ -1,21 +1,27 @@
 #include "holberton.h"
 /**
  * *rot13 - print a string upper in especial caracter
- * @c: The caracter to print
+ * @s: The caracter to print
  *
  *Return: Always 0.
  */
-char *rot13(char *c)
+char *rot13(char *s)
 {
 	int i;
-		for (i = 0 ; c[i] ; c++)
+	int j;
+	char m[] = "aAbBcCdDeEfFgGhHiIjJkKlLmM";
+	char n[] = "nNoOpPqQrRsStTuUvVwWxXyYzZ";
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		for (j = 0 ; m[j] != 0 ; j++)
 		{
-			if ((c[i] > 'a' && c[i] < 'm') ||
-			    (c[i] > 'A' && c[i] <'M'))
-				c[i] += 13;
-			else if ((c[i] > 'n' && c[i] < 'z') ||
-				 (c[i] > 'N' && c[i] < 'Z'))
-				c[i] -= 13;
+			if (s[i] == m[j])
+			{
+				s[i] = n[j];
+				break;
+			}
 		}
-		return (c);
+	}
+	return (s);
 }
