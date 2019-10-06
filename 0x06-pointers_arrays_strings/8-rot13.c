@@ -1,16 +1,16 @@
 #include "holberton.h"
 /**
- * *rot13 - print a string upper in especial caracter
+ * *rot13 - print a string in rot 13 cypher
  * @s: The caracter to print
  *
- *Return: Always 0.
+ *Return: string.
  */
 char *rot13(char *s)
 {
 	int i;
 	int j;
-	char m[] = "aAbBcCdDeEfFgGhHiIjJkKlLmM";
-	char n[] = "nNoOpPqQrRsStTuUvVwWxXyYzZ";
+	char m[] = "aAbBcCdDeEfFgGhHiIjJkKlLmMnNoOpPqQrRsStTuUvVwWxXyYzZ";
+	char n[] = "nNoOpPqQrRsStTuUvVwWxXyYzZaAbBcCdDeEfFgGhHiIjJkKlLmM";
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
