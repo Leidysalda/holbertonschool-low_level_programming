@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
- * _puts_rev_recursion - a function that prints the chessboard.
- * @s: array
+ * _print_rev_recursion - a function that prints string in reverse.
+ * @s: string
  *
  *Return: Always 0.
  */
