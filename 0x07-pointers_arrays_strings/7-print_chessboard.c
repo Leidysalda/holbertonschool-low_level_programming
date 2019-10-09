@@ -19,10 +19,4 @@ void print_chessboard(char (*a)[8])
 			a[x][y] = *(a);
 		}
 	}
-
-	for (x = 0 ; x < 8 ; x++)
-	{
-		for (y = 0 ; y < 8 ; y++)
-			printf("\n");
-	}
 }
