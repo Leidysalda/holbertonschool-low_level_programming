@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
- * _strelen_recursion - a function that prints lengh of a string.
+ * _strlen_recursion - a function that prints lengh of a string.
  * @s: string
  *
  *Return: Always 0.
