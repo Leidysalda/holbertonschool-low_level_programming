@@ -5,18 +5,17 @@
  * @s: char 
  *Return: Always 0.
  */
-
 int _strlen(char *s)
 {
-        if (*s != '\0')
-        {
-                return (1 + _strlen(s + 1));
-        }
-        return (0);
+      if (*s != '\0')
+      {
+              return (1 + _strlen(s + 1));
+      }
+      return (0);
 }
 
 /**
- * aux - a function that prints string in reverse.
+ * aux - a function 
  * @s: base
  * @x: number
  *Return: Always 0.
@@ -38,7 +37,7 @@ int aux(char *s, int x)
 }
 
 /**
- * is_palindrome - a function that prints string in reverse.
+ * is_palindrome - a function 
  * @s: base
  * 
  *Return: Always 0.
