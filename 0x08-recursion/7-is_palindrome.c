@@ -7,7 +7,6 @@
  */
 
 int _strlen(char *s)
-
 {
         if (*s != '\0')
         {
@@ -22,7 +21,6 @@ int _strlen(char *s)
  * @x: number
  *Return: Always 0.
  */
-
 int aux(char *s, int x)
 {
         if (x <= 0)
@@ -45,7 +43,6 @@ int aux(char *s, int x)
  * 
  *Return: Always 0.
  */
-
 int is_palindrome(char *s)
 {
         int l;
