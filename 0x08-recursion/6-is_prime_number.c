@@ -3,7 +3,7 @@
 /**
  * is_prime_number2 - a function that prints string in reverse.
  * @n: base
- * @m:
+ * @m: number
  *Return: Always 0.
  */
 
