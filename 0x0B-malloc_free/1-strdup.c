@@ -10,7 +10,6 @@
 
 char *_strdup(char *str)
 {
-	str = malloc(sizeof(char));
 	printf("%s\n", str);
 
 	free(str);
