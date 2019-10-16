@@ -2,8 +2,9 @@
 #include <stdlib.h>
 #include "holberton.h"
 /**
- * *_strdup - create a array
- * @str: size array
+ * *str_concat - concatena un array
+ * @s1: array
+ * @s2: array
  *
  *Return: Always 0.
  */
@@ -11,33 +12,33 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *pointer;
-        int size, size2, loop1, loop2;
+	int size, size2, loop1, loop2;
 
-        if (s1 == NULL)
-        {
-                return ("");
-        }
+	if (s1 == NULL)
+	{
+		return ("");
+	}
 
-        if (s2 == NULL)
-        {
-                return ("");
-        }
+	if (s2 == NULL)
+	{
+		return ("");
+	}
 
-        for (size = 0; s1[size] != '\0'; size++)
-        {}
+	for (size = 0; s1[size] != '\0'; size++)
+	{}
 
-        for (size2 = 0; s2[size2] != '\0'; size2++)
-        {}
+	for (size2 = 0; s2[size2] != '\0'; size2++)
+	{}
 
-        pointer = malloc((sizeof(*s1) * size) + (sizeof(*s2) * size2 + 1));
+	pointer = malloc((sizeof(*s1) * size) + (sizeof(*s2) * size2 + 1));
 
-        if (pointer == NULL)
-        {
-                return (NULL);
-        }
+	if (pointer == NULL)
+	{
+		return (NULL);
+	}
 
-        for (loop1 = 0, loop2 = 0; loop1 < (size + size2 +1); loop1++)
-        {
+	for (loop1 = 0, loop2 = 0; loop1 < (size + size2 + 1); loop1++)
+	{
 		if (loop1 < size)
 		{
 			pointer[loop1] = s1[loop1];
@@ -46,6 +47,6 @@ char *str_concat(char *s1, char *s2)
 		{
 			pointer[loop1] = s2[loop2++];
 		}
-        }
-        return (pointer);
+	}
+	return (pointer);
 }
