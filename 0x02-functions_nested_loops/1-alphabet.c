@@ -1,12 +1,12 @@
 #include "holberton.h"
 /**
 * print_alphabet - writes the alphabet
-*
+* @void: parameter in
 *Return: 0
 * On error, -1 is returned, and errno is set appropriately.
 */
 
-int print_alphabet(void)
+void print_alphabet(void)
 {
 	int n;
 
@@ -15,5 +15,4 @@ int print_alphabet(void)
 		_putchar(n);
 	}
 	_putchar('\n');
-	return (0);
 }
