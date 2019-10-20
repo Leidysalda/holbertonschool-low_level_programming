@@ -5,7 +5,7 @@ void _putchar(char c);
 
 #ifndef PRINT_ALPHABET_H
 #define PRINT_ALPHABET_H
-int print_alphabet(void);
+void print_alphabet(void);
 #endif
 
 #ifndef PRINT_ALPHABET_x10_H
@@ -40,7 +40,7 @@ void jack_bauer(void);
 
 #ifndef TIMES_TABLE_H
 #define TIMES_TABLE_H
-void times_table(void)
+void times_table(void);
 #endif
 
 #ifndef ADD_H
