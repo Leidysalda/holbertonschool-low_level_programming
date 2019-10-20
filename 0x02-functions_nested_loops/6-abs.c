@@ -7,15 +7,15 @@
  * Return: 0n success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-unsigned int _abs(unsigned int r)
+int _abs(int r)
 {
-	if (r >= 48)
+	if (r >= 0)
 	{
 		_putchar(r);
 	}
 	else
 	{
-		r = r * -1;
+		r = (r * -1);
 	}
 	return (r);
 }
