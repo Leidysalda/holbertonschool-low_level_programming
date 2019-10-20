@@ -3,9 +3,9 @@
 #include <stdlib.h>
 
 /**
- * free_grid - prints a grid of integers
- * @grid: the address of the two dimensional grid
- * @width: width of the grid
+ * free_grid - funtion
+ * @grid: pointer of pointer
+ * @height: variable of the grid
  *
  * Return: Nothing.
  */
