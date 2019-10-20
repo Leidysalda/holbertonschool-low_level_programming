@@ -5,7 +5,7 @@ int _putchar(char c)
 
 #ifndef PRINT_ALPHABET_H
 #define PRINT_ALPHABET_H
-void print_alphabet(void);
+int print_alphabet(void);
 #endif
 
 #ifndef PRINT_ALPHABET_x10_H
