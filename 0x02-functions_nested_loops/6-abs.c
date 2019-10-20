@@ -9,7 +9,7 @@
  */
 unsigned int _abs(unsigned int r)
 {
-	if (r >= 0)
+	if (r >= 48)
 	{
 		_putchar(r);
 	}
