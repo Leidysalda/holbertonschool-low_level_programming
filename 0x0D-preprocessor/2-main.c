@@ -1,12 +1,11 @@
 #include <stdio.h>
 /**
  * main - fill memory with a constant byte
- * @argv:
  *
  * Return: Always 0.
  */
 
-int main()
+int main(void)
 {
 	printf("%s\n", __FILE__);
 	return (0);
