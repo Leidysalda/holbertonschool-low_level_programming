@@ -1,3 +1,8 @@
+#ifndef PRINT_SQUARE_H
+#define PRINT_SQUARE_H
+void print_square(int size);
+#endif
+
 #ifndef PRINT_DIAGONAL
 #define PRINT_DIAGONAL
 void print_diagonal(int n);
