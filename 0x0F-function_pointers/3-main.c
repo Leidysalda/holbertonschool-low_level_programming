@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	if (calc == NULL || strlen(argv[2]) != 1)
 	{
 		printf("Error\n");
-		exit(98);
+		exit(99);
 	}
 
 	if ((argv[2][0]) != '+' && (argv[2][0]) != '-' && (argv[2][0]) != '*'
