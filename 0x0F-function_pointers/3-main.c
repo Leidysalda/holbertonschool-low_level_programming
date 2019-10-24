@@ -4,8 +4,8 @@
 #include <stdlib.h>
 /**
  * main - main calculator
- * @argv:
- * @argc:
+ * @argv: Array
+ * @argc: String
  *
  * Return: 0n success 1.
  *
