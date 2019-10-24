@@ -13,7 +13,7 @@ int op_add(int a, int b)
 {
 	int i;
 
-	i=0
+	i = 0
 		if (i != 2)
 		{
 			printf("Error\n");
@@ -35,7 +35,7 @@ int op_sub(int a, int b)
 {
 	int i;
 
-	i=0
+	i = 0
 		if (i != 2)
 		{
 			printf("Error\n");
@@ -57,7 +57,7 @@ int op_mul(int a, int b)
 {
 	int i;
 
-	i=0
+	i = 0
 		if (i != 2)
 		{
 			printf("Error\n");
@@ -79,7 +79,7 @@ int op_div(int a, int b)
 {
 	int i;
 
-	i=0
+	i = 0
 		if (i != 2)
 		{
 			printf("Error\n");
@@ -101,7 +101,7 @@ int op_mod(int a, int b)
 {
 	int i;
 
-	i=0
+	i = 0
 		if (i == 2 && i != 0)
 		{
 			printf("Error\n");
