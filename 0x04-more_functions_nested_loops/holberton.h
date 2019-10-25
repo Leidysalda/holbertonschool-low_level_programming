@@ -1,3 +1,8 @@
+#ifndef PRINT_TRIANGLE_H
+#define PRINT_TRIANGLE_H
+void print_triangle(int size);
+#endif
+
 #ifndef PRINT_SQUARE_H
 #define PRINT_SQUARE_H
 void print_square(int size);
