@@ -1,5 +1,6 @@
 #ifndef VARIADIC_FUNCTIONS_H
 #define VARIADIC_FUNCTIONS_H
+#include <stdarg.h>
 /**
  * struct format - Struct format of data
  *
@@ -10,14 +11,14 @@
 typedef struct format
 {
 	char *type;
-	void (*f)(va_list);
+	void (*f)();
 } format_t;
 
-char type_char(char a);
-int type_integer(int a);
-float type_float(float a);
-char type_string(char *s);
-void (*get_type_func(char *s))(int);
+void type_ch(va_list args);
+void type_in(va_list args);
+void type_fl(va_list args);
+void type_st(va_list args);
+void get_type_func(char s, va_list args);
 int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
