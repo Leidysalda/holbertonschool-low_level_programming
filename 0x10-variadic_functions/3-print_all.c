@@ -61,7 +61,9 @@ void type_st(va_list args)
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	unsigned int j, i;
+	unsigned int j;
+	unsigned int i;
+
 	format_t selector[] = {
 		{"c", type_ch},
 		{"i", type_in},
@@ -71,16 +73,20 @@ void print_all(const char * const format, ...)
 	};
 
 	va_start(args, format);
-	j = 0;
 
+	j = 0;
 	while (format && format[j])
 	{
 		i = 0;
+
 		while (selector[i].type != NULL)
 		{
+
 			if (*(selector[i].type) == format[j])
 			{
 				((selector[i].f)(args));
+
+
 				if (format[j + 1] != '\0')
 				{
 					printf(", ");
@@ -91,6 +97,7 @@ void print_all(const char * const format, ...)
 		}
 		j++;
 	}
+
 	va_end(args);
 	printf("\n");
 }
