@@ -1,6 +1,8 @@
+#include "variadic_functions.h"
 #include <stdio.h>
 #include <stdarg.h>
-#include "variadic_functions.h"
+#include <stdlib.h>
+
 /**
  * type_ch - print type of characters
  * @args: instance of va_list
