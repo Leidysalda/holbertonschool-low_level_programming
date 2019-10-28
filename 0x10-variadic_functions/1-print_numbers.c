@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "variadic_functions.h"
 #include <stdarg.h>
 /**
@@ -7,7 +6,7 @@
  * @separator: special caracter for separate
  * @n: number
  *
- *Return: Always 0.
+ * Return: Always 0.
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
@@ -21,8 +20,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		printf("%d", va_arg(args, int));
 
 		if (i != (n - 1) && separator != NULL)
-			printf("%c ", *separator);
+			printf("%s ", separator);
 	}
-	va_end(args);
 	printf("\n");
+	va_end(args);
 }
