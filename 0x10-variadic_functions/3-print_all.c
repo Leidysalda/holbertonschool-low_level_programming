@@ -95,5 +95,6 @@ void print_all(const char * const format, ...)
 		j++;
 	}
 	va_end(args);
+
 	printf("\n");
 }
