@@ -33,7 +33,7 @@ void type_in(va_list args)
  */
 void type_fl(va_list args)
 {
-printf("%f", va_arg(args, double));
+	printf("%f", va_arg(args, double));
 }
 
 /**
@@ -52,7 +52,6 @@ void type_st(va_list args)
 	}
 	else
 		printf("(nil)");
-	return;
 }
 
 /**
@@ -63,9 +62,9 @@ void type_st(va_list args)
  */
 void print_all(const char * const format, ...)
 {
+	unsigned int i, j;
 	va_list args;
-	unsigned int j;
-	unsigned int i;
+
 	format_t selector[] = {
 		{"c", type_ch},
 		{"i", type_in},
@@ -73,6 +72,7 @@ void print_all(const char * const format, ...)
 		{"s", type_st},
 		{NULL, NULL}
 	};
+
 	va_start(args, format);
 
 	j = 0;
