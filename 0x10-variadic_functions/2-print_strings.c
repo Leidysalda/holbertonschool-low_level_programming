@@ -11,7 +11,7 @@
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	if (separator != NULL)
+	if (separator != NULL && n != '\0')
 	{
 		va_list args;
 		unsigned int i;
@@ -33,6 +33,4 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		va_end(args);
 		printf("\n");
 	}
-	else
-		return;
 }
