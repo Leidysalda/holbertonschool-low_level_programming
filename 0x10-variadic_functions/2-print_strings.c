@@ -20,9 +20,15 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		name = va_arg(args, char *);
 
-		if ((name != '\0') && (separator != NULL) && (i < (n - 1)))
+		if (name != '\0' && separator != NULL)
 		{
-			printf("%s%s", name, separator);
+
+			printf("%s", name);
+			if (i < (n - 1))
+			{
+				printf("%s", separator);
+			}
+
 		}
 		else
 		{
