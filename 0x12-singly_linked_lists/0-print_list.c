@@ -6,11 +6,11 @@
  * print_list - print single list.
  * @h: special caracter for separate
  *
- *
+ * Return: valor of iterations
  */
 size_t print_list(const list_t *h)
 {
-	int i = 0;
+	unsigned int i = 0;
 
 	for (i = 0 ; h != 0 ;  i++)
 	{
