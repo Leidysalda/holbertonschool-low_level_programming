@@ -1,26 +1,27 @@
-#include "variadic_functions.h"
+#include "lists.h"
+#include <stdarg.h>
+#include <stdio.h>
 
 /**
- * print_list - print numbers.
+ * print_list - print single list.
  * @h: special caracter for separate
  *
  *
  */
-
 size_t print_list(const list_t *h)
 {
-	unsigned int i;
-	va_list argument;
+	int i = 0;
 
-	va_start(argument, n);
-	for  (i = 0 ; i < n ;  i++)
+	for (i = 0 ; h != 0 ;  i++)
 	{
-		printf("%d", va_arg(argument, unsigned int));
-		if (separator != NULL && i < (n - 1))
-		{
-			printf("%s", separator);
-		}
+		if (h->str == NULL)
+
+			printf("[0] (nil)\n");
+
+		else
+			printf("[%d] %s\n", h->len, h->str);
+
+		h = h->next;
 	}
-	printf("\n");
-	va_end(argument);
+	return (2);
 }
