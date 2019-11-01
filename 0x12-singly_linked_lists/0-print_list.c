@@ -12,7 +12,7 @@ size_t print_list(const list_t *h)
 {
 	unsigned int i = 0;
 
-	for (i = 0 ; h != 0 ;  i++)
+	for (i = 0 ; h != '\0' ;  i++)
 	{
 		if (h->str == NULL)
 
