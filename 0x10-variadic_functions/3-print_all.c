@@ -79,16 +79,12 @@ void print_all(const char * const format, ...)
 	while (format && format[j])
 	{
 		i = 0;
-		while (selector[i].type != NULL)
+		while (selector[i].type)
 		{
-			if (*(selector[i].type) == format[j])
+			if (*(selector[i].type) == format[j] )
 			{
 				((selector[i].f)(args));
-				if (format[j + 1] != '\0')
-				{
-					printf(", ");
-				}
-				break;
+				printf(", ");
 			}
 			i++;
 		}
