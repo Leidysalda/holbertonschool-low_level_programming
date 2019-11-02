@@ -3,8 +3,9 @@
 #include <stdio.h>
 
 /**
- * list_len - print single list.
- * @h: special caracter for separate
+ * add_node - adds a new node at the beginning of a list.
+ * @head: initial node
+ * @str: string new element
  *
  * Return: value of iterations
  */
@@ -14,9 +15,9 @@ list_t *add_node(list_t **head, const char *str)
 	int i;
 
 	new = malloc(sizeof(list_t));
-	if(new == NULL)
+	if (new == NULL)
 		return (NULL);
-	
+
 	for (i = 0; str[i]; i++)
 	{}
 
