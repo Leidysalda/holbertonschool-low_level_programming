@@ -8,17 +8,22 @@ A Linked List is a linear data structure. Every linked list has two parts, the d
 Example:
 
 The firts part is create a structure.
+
+
 ´´´
 typedef struct listint_s
 {
     int n;
     struct listint_s *next;
 } listint_t;
+
 ´´´
 
 ...After the function
 
+
 ´´´
+
 size_t print_list(const list_t *h)
 {
 	unsigned int i = 0;
@@ -33,5 +38,6 @@ size_t print_list(const list_t *h)
 	}
 	return (i);
 }
+
 
 ´´´
