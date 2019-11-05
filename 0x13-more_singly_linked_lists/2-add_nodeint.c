@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 /**
- * add_node - adds a new node at the beginning of a list.
+ * add_nodeint - adds a new node at the beginning of a list.
  * @head: initial node
  * @n: string new element
  *
