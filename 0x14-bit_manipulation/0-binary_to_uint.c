@@ -1,23 +1,21 @@
 #include "holberton.h"
-#include <math.h>
 /**
  * binary_to_uint - converts a binary number to an unsigned int.
- * @b: input
+ * @b: pointing
  *
- * Return: 0.
+ * Return: unsigend or 0.
  */
 unsigned int binary_to_uint(const char *b)
 {
-	int n = atoi(b);
-	unsigned int rem, dec = 0, i = 0;
+	unsigned int i = 0;
 
-	while (n != 0)
+	while (*b)
 	{
-		rem = n % 10;
-		dec += (rem * pow(2, i));
-		n /= 10;
-		i++;
-	}
+		if (*b != '0' && *b != '1')
+			return (0);
 
-	return (dec);
+		i <<= 1;
+		i += *b++ - '0';
+	}
+	return (i);
 }
