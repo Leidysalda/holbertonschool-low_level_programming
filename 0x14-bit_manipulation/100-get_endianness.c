@@ -9,12 +9,7 @@
 int get_endianness(void)
 {
 	unsigned int i = 1;
-	char *c = (char*)&i;
+	char *c = (char*) &i;
 
-	if (*c)
-		printf("Little Endian\n");
-	else
-		printf("Big Endian\n");
-	getchar();
-	return 0;
+	return (int)*c;
 }
