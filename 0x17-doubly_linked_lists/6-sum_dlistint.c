@@ -3,10 +3,10 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * print_dlistint - function that prints all the elements of a list.
- * @h: element
+ * sum_dlistint -  function that returns the sum of all the data (n).
+ * @head: element
  *
- * Return: size_t
+ * Return: add
  */
 
 int sum_dlistint(dlistint_t *head)
