@@ -12,7 +12,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	hash_table_t *tmp;
 	unsigned long int i;
 
-	tmp = malloc(sizeof(hash_node_t) * size);
+	tmp = malloc(sizeof(hash_node_t));
 
 	if (tmp == NULL)
 		return (NULL);
