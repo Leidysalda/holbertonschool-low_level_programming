@@ -4,7 +4,7 @@
  *
  * @size: is the size of the array
  *
- * Return: Always EXIT_SUCCESS.
+ * Return: pointer to the newly created hash table.
  */
 
 hash_table_t *hash_table_create(unsigned long int size)
@@ -18,8 +18,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 		return (NULL);
 
 	for (i = 0; i < size; i++)
-	{
 		tmp[i].array = malloc(sizeof(hash_node_t) * size);
-	}
+
 	return (tmp);
 }
