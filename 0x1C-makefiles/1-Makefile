@@ -2,5 +2,5 @@ CC = gcc
 SRC = main.c holberton.c
 
 # First Makefile
-holberton: $(SRC)
+all: $(SRC)
 	$(CC) $(SRC) -o holberton
