@@ -5,7 +5,10 @@ OBJ = main.o holberton.o
 NAME = holberton
 
 #Create program
-all: $(OBJ)
+all: holberton
+
+#Execute
+holberton: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 holberton.o: m.h
