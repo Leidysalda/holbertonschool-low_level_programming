@@ -1,14 +1,15 @@
-#Create your first useful Makefile: Variables
+# Create your first useful Makefile: Variables
 CC = gcc
 SRC = main.c holberton.c
-OBJ = main.o holberton.o
+OBJ = $(SRC:.c = .o)
 NAME = holberton
 
-#Create program
-all: holberton
+# Executable
+all: program
 
 #Execute
-holberton: $(OBJ)
+program: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-holberton.o: m.h
+%.o: %.c
+	$(CC) -c $< -o $@
