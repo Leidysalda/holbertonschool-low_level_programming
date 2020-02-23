@@ -1,0 +1,26 @@
+# First Makefile
+
+CC = gcc
+SRC = main.c holberton.c
+OBJ = main.o holberton.o
+NAME = holberton
+RM = rm
+
+all: holberton
+
+holberton: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+holberton.o: m.h
+
+clean:
+	rm -f *~ $(NAME)
+
+oclean:
+	rm -f $(OBJ)
+
+fclean:
+	clean oclean
+
+re:
+	oclean all

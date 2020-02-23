@@ -4,6 +4,7 @@ SRC = main.c holberton.c
 OBJ = main.o holberton.o
 NAME = holberton
 
+#Create program
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
