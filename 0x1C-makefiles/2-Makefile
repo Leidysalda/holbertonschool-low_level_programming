@@ -1,6 +1,10 @@
 CC = gcc
 SRC = main.c holberton.c
+OBJ = main.o holberton.o
+NAME = holberton
 
 # First Makefile
-all: $(SRC)
-	$(CC) $(SRC) -o holberton
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+holberton.o: m.h
