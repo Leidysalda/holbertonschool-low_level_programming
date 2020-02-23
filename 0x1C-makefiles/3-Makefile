@@ -1,26 +1,27 @@
-# First Makefile
-
+# Create the first useful Makefile: Variables
 CC = gcc
 SRC = main.c holberton.c
-OBJ = main.o holberton.o
+OBJ = $(SRC:.c=.o)
 NAME = holberton
-RM = rm
 
-all: holberton
+# Executable
+all: program
 
-holberton: $(OBJ)
+#Rules
+program: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-holberton.o: m.h
+%.o: %.c
+	$(CC) -c $< -o $@
 
 clean:
-	rm -f *~ $(NAME)
+        rm -f *~ $(NAME)
 
 oclean:
-	rm -f $(OBJ)
+        rm -f $(OBJ)
 
 fclean:
-	clean oclean
+        clean oclean
 
 re:
-	oclean all
+        oclean all
