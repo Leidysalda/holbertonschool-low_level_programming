@@ -1,7 +1,7 @@
 #ifndef PRINT_REV_H
 #define PRINT_REV_H
 
-char _strcpy(char *dest, char *src);
+char *_strcpy(char *dest, char *src);
 void print_array(int *a, int n);
 void puts2(char *str);
 void rev_string(char *s);
