@@ -6,16 +6,17 @@
  * @dest: dest
  * @src: source
  *
- *Return: pointe dest.
+ * Return: pointer dest.
  */
 
 char *_strcpy(char *dest, char *src)
 {
-	size_t i;
+	int i;
 
 	for (i = 0; src[i]; i++)
+	{
 		dest[i] = src[i];
-
+	}
 	dest[i] = src[i];
 	return (dest);
 }
