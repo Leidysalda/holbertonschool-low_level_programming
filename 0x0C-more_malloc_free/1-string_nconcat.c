@@ -13,9 +13,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *new_string = malloc(strlen(s1) + strlen(s2) + n);
 
 	if (n > strlen(s2))
-		return(NULL);
+		return (NULL);
 
 	strcpy(new_string, s1);
 	strcat(new_string, s2);
-	return(new_string);
+	return (new_string);
 }
