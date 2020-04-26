@@ -15,6 +15,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n > strlen(s2))
 		return (NULL);
 
+	if (s1 == NULL)
+		s1 = "";
+
+	if (s2 == NULL)
+		s2 = "";
+
 	strcpy(new_string, s1);
 	strcat(new_string, s2);
 	return (new_string);
