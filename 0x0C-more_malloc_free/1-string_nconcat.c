@@ -1,5 +1,20 @@
 #include "holberton.h"
 /**
+ * strl -  len of string.
+ * @s: string
+ *
+ * Return: pointer.
+ */
+
+int strl(char *s)
+{
+	int i;
+	for (i = 0; s[i] != '\0'; i++)
+		;
+	return (i);
+}
+
+/**
  * string_nconcat -  function that concatenates two strings.
  * @s1: string
  * @s2: string
@@ -21,6 +36,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (n >= strlen(s2))
 		n = strlen(s2);
+
 
 	new_string = malloc(strlen(s1) + strlen(s2) + 1);
 
