@@ -1,48 +1,8 @@
 #include <stdlib.h>
 #include "dog.h"
 #include <string.h>
-
-/**
- * strl -  len of string.
- * @s: string
- *
- * Return: pointer.
- */
-
-int strl(char *s)
-{
-	int j;
-
-	for (j = 0; s[j] != '\0'; j++)
-		;
-	return (j);
-}
-
-/**
- * strc -  copy of string.
- * @s: string
- *
- * Return: pointer.
- */
-
-char *strc(char *des, char *src)
-{
-	int j, len;
-	char *new;
-
-	while (*new != '\0')
-	{
-		new++;
-		len++;
-	}
-
-	for (j = 0; j <= len; j++)
-	{
-		des[j] = *src;
-		src++;
-	}
-	return (des);
-}
+char *strc(char *des, char *src);
+int strl(char *s);
 
 /**
  * new_dog -  function that creates a new dog.
@@ -77,9 +37,52 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 
 	new->name = strc(new->name, name);
-	new->age = age;
 	new->owner = strc(new->owner, owner);
+	new->age = age;
 
 	return (new);
 }
 
+/**
+ * strl -  len of string.
+ * @s: string
+ *
+ * Return: pointer.
+ */
+
+int strl(char *s)
+{
+	int j;
+
+	for (j = 0; s[j] != '\0'; j++)
+		;
+	return (j);
+}
+
+/**
+ * strc -  copy of string.
+ * @s: string
+ *
+ * Return: pointer.
+ */
+
+char *strc(char *des, char *src)
+{
+	int j, len;
+	char *new;
+
+	new = src;
+	len = 0;
+	while (*new != '\0')
+	{
+		new++;
+		len++;
+	}
+
+	for (j = 0; j <= len; j++)
+	{
+		des[j] = *src;
+		src++;
+	}
+	return (des);
+}
