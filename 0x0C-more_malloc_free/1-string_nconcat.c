@@ -8,7 +8,7 @@
 
 int strl(char *s)
 {
-	unsigned int j;
+	int j;
 	for (j = 0; s[j] != '\0'; j++)
 		;
 	return (j);
@@ -37,8 +37,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	a = strl(s1);
 	b = strl(s2);
 
-	if (n >= b)
-		n = b;
+	if (n < b)
+		b = n;
 
 	new_string = malloc(a + b + 1);
 
