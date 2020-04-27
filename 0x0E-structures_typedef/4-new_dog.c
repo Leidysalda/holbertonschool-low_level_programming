@@ -61,7 +61,8 @@ int strl(char *s)
 
 /**
  * strc -  copy of string.
- * @s: string
+ * @des: des
+ * @src: source
  *
  * Return: pointer.
  */
