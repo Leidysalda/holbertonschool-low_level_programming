@@ -8,10 +8,10 @@
 
 int strl(char *s)
 {
-	int i;
-	for (i = 0; s[i] != '\0'; i++)
+	unsigned int j;
+	for (j = 0; s[j] != '\0'; j++)
 		;
-	return (i);
+	return (j);
 }
 
 /**
@@ -26,7 +26,7 @@ int strl(char *s)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *new_string;
-	unsigned int i;
+	unsigned int i, a, b;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -34,22 +34,24 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-	if (n >= strlen(s2))
-		n = strlen(s2);
+	a = strl(s1);
+	b = strl(s2);
 
+	if (n >= b)
+		n = b;
 
-	new_string = malloc(strlen(s1) + strlen(s2) + 1);
+	new_string = malloc(a + b + 1);
 
 	if (new_string == NULL)
 		return (NULL);
 
-	for (i = 0; i < strlen(s1); i++)
+	for (i = 0; i < a; i++)
 		*(new_string + i) = *(s1 + i);
 
-	for (i = 0; i < strlen(s2); i++)
-		*(new_string + (i + strlen(s1))) = *(s2 + i);
+	for (i = 0; i < b; i++)
+		*(new_string + (i + a)) = *(s2 + i);
 
-	*(new_string + (i + strlen(s1))) = '\0';
+	*(new_string + (i + a)) = '\0';
 
 	return (new_string);
 }
