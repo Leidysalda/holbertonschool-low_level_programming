@@ -1,6 +1,49 @@
 #include <stdlib.h>
 #include "dog.h"
 #include <string.h>
+
+/**
+ * strl -  len of string.
+ * @s: string
+ *
+ * Return: pointer.
+ */
+
+int strl(char *s)
+{
+	int j;
+
+	for (j = 0; s[j] != '\0'; j++)
+		;
+	return (j);
+}
+
+/**
+ * strc -  copy of string.
+ * @s: string
+ *
+ * Return: pointer.
+ */
+
+char *strc(char *des, char *src)
+{
+	int j, len;
+	char *new;
+
+	while (*new != '\0')
+	{
+		new++;
+		len++;
+	}
+
+	for (j = 0; j <= len; j++)
+	{
+		des[j] = *src;
+		src++;
+	}
+	return (des);
+}
+
 /**
  * new_dog -  function that creates a new dog.
  * @name: name
@@ -18,14 +61,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (new ==  NULL)
 		return (NULL);
 
-	new->name = malloc(1 + strlen(name));
+	new->name = malloc(1 + strl(name));
 	if (new->name == NULL)
 	{
 		free(new);
 		return (NULL);
 	}
 
-	new->owner = malloc(1 + strlen(owner));
+	new->owner = malloc(1 + strl(owner));
 	if (new->owner == NULL)
 	{
 		free(new->name);
@@ -33,9 +76,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	new->name = strcpy(new->name, name);
+	new->name = strc(new->name, name);
 	new->age = age;
-	new->owner = strcpy(new->owner, owner);
+	new->owner = strc(new->owner, owner);
 
 	return (new);
 }
+
