@@ -16,10 +16,12 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	if (head == NULL)
 		return (NULL);
 
-	while (index > i)
+	while (head != NULL)
 	{
-		find = find->next;
+		if (i == index)
+			return (find);
 		i++;
+		find = find->next;
 	}
 	return (find);
 }
