@@ -1,13 +1,10 @@
 #include "hash_tables.h"
 /**
  * hash_table_set - hash table
- *
  * @ht: struct
  * @key: key
  * @value: value
- *
  * Return: index
- *
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
@@ -19,7 +16,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	if (key == NULL || *key == '\0')
 		return (0);
-
 	i = key_index((unsigned char *)key, ht->size);
 
 	if (ht->array[i] != NULL)
@@ -51,6 +47,5 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		tmp->next = ht->array[i];
 		ht->array[i] = tmp;
 	}
-
 	return (1);
 }
