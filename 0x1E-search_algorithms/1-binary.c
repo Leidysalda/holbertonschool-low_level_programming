@@ -43,13 +43,16 @@ int binary_search(int *array, size_t size, int value)
  */
 void print_array(int *array, int left, int size)
 {
+	unsigned int i = left, end;
+	end = size;
 
 	printf("Searching in array: ");
-	while (left <= size)
+	while (i <= end)
 	{
-		/* if (left > 0) */
-		printf("%d ", array[left]);
-		left++;
+		printf("%d", array[i]);
+		if (i < end)
+			printf(", ");
+		++i;
 	}
 	printf("\n");
 }
